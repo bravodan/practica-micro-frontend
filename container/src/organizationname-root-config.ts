@@ -18,6 +18,15 @@ registerApplication({
   activeWhen: ["/"],
 });
 
+registerApplication({
+  name: "@organizationname/mf-singlespa-details",
+  app: () =>
+    System.import<LifeCycles>(
+      "@organizationname/mf-singlespa-details"
+    ),
+  activeWhen: ["/mf-singlespa-details"],
+});
+
 // registerApplication({
 //   name: "@organizationname/navbar",
 //   app: () => System.import("@organizationname/navbar"),
