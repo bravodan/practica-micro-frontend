@@ -43,7 +43,7 @@
     <% if (isLocal) { %>
         <script type="systemjs-importmap">
             { "imports": { "@organizationname/root-config": "//localhost:9000/organizationname-root-config.js", "@organizationname/mf-header": "//localhost:4200/main.js", "@organizationname/mf-main": "//localhost:4201/main.js", "@organizationname/mf-singlespa-details":
-            "//localhost:4202/main.js" } }
+            "//localhost:4202/main.js", "@organizationname/mf-microfrontend-details": "//localhost:4203/main.js" } }
         </script>
         <% } %>
 
@@ -69,6 +69,7 @@
     <main style="display: flex; justify-content: center; margin-top: 2%;">
         <section id="single-spa-application:@organizationname/mf-main"></section>
         <section id="single-spa-application:@organizationname/mf-singlespa-details"></section>
+        <section id="single-spa-application:@organizationname/mf-microfrontend-details"></section>
     </main>
     <script>
         System.import('@organizationname/root-config');

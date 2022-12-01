@@ -27,6 +27,15 @@ registerApplication({
   activeWhen: ["/mf-singlespa-details"],
 });
 
+registerApplication({
+  name: "@organizationname/mf-microfrontend-details",
+  app: () =>
+    System.import<LifeCycles>(
+      "@organizationname/mf-microfrontend-details"
+    ),
+  activeWhen: ["/mf-microfrontend-details"],
+});
+
 // registerApplication({
 //   name: "@organizationname/navbar",
 //   app: () => System.import("@organizationname/navbar"),
