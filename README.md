@@ -4,7 +4,11 @@
 
 El proyecto debe ejecutarse con el comando que aparece abajo desde la carpeta CONTAINER:
 
-`npm start`
+`npm start`  
+
+El proyecto correra en la ruta:  
+
+http://localhost:9000
 
 ## Development server
 
